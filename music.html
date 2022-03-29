@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="../images/music2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="player">
+            <div class="nav">
+                <!-- <i class="fa-solid fa-angle-left" id="back"></i> -->
+                <div class="playlistName">Anwesha's Playlist</div>
+                <i class="fa-solid fa-bars" id="menu1"></i>
+            </div>
+            <div class="heading">
+                <h3 id="title">Likhe Jo Khat Tujhe</h3>
+                <h4 id="artist">Anwesha Goswami</h4>
+            </div>
+            <div class="image">
+                <img src="../images/music3.jpg" alt="" id="pic">
+            </div>
+            <div class="sound">
+                <audio controls>
+                    <source src="" id="name">  
+                </audio>
+                <div class="progressContainer" id="pgBox">
+                    <div class="progress" id="pg"></div>
+                </div>
+                <div class="musicControls">
+                    <!-- <i class="fa-solid fa-arrow-rotate-left" id="replay"></i> -->
+                    <i class="fa-solid fa-backward-step" id="prev"></i>
+                    <i class="fa-solid fa-play" id="play"></i>
+                    <i class="fa-solid fa-forward-step" id="forward"></i>
+                    <!-- <input type="range" value="1" step="0.1" id="volumeSlider"> -->
+                    <!-- <i class="fa-solid fa-volume-high"></i> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playlists">
+            <div class="yourPlaylists">
+                <div class="playHeading">
+                    <i class="fa-solid fa-angle-left" id="Pback"></i>
+                    <h3 class="playlistTitle">Playlists</h3>
+                    <i class="fa-solid fa-bars" id="menu2"></i>
+                </div>
+    
+                <div class="QueueOuter" id="outerQueue">
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay1"></i>
+                        </div>
+                        <p class="songName" id="song1">Likhe Jo Khat Tujhe</p>    
+                    </div>
+    
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay2"></i>
+                        </div>
+                        <p class="songName" id="song2">Aapki Nazro Ne Samjha</p>    
+                    </div>
+    
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay3"></i>
+                        </div>
+                        <p class="songName" id="song3">Aaoge Jab Tum</p>    
+                    </div>
+    
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay4"></i>
+                        </div>
+                        <p class="songName" id="song4">Acha Lagta Hai</p>    
+                    </div>
+
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay5"></i>
+                        </div>
+                        <p class="songName" id="song5">Humnava Mere</p>    
+                    </div>
+
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay6"></i>
+                        </div>
+                        <p class="songName" id="song6">Kuch Toh Hai</p>    
+                    </div>
+
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay7"></i>
+                        </div>
+                        <p class="songName" id="song7">Mere Yaara</p>    
+                    </div>
+
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay8"></i>
+                        </div>
+                        <p class="songName" id="song8">O Mere Dil Ke Chain</p>    
+                    </div>
+
+                    <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay9"></i>
+                        </div>
+                        <p class="songName" id="song9">Tu Hi Haqeeqat</p>    
+                    </div>
+
+                    <!-- <div class="queue">
+                        <div class="queueImage">
+                            <img src="../images/music2.jpg" alt="" class="Pid">
+                            <i class="fa-solid fa-play" id="plPlay1"></i>
+                        </div>
+                        <p class="songName" id="song1">Song Name</p>    
+                    </div> -->
+                </div>
+                
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+    
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
