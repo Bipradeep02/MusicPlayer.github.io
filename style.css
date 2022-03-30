@@ -409,3 +409,405 @@ audio {
     cursor: pointer;
     overflow-x: hidden;
 }
+
+
+
+
+@media only screen and (max-width : 521px) {
+    .player{
+        position: absolute;
+        z-index: 34;
+        width: 26rem;
+        height: 43rem;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgba(6, 28, 29, 0.938);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4rem;
+        box-shadow: 4px 4px 280px 40px rgba(0, 255, 255, 0.693), 
+                inset 0rem 0rem 11rem 3rem rgb(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+    
+    .nav{
+        position: relative;
+        margin: 1rem 0rem 1rem 0rem;
+        width: 21rem;
+        height: 5.3rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav .playlistName{
+        flex-grow: 2;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        letter-spacing: 0.4rem;
+        line-height: 1.5rem;
+        overflow: hidden;
+        text-shadow: 0.05rem 0.08rem 0.4rem rgba(252, 252, 252, 0.74);
+    
+    }
+    .nav #back{
+        font-size: 5.5rem;
+        cursor: pointer;
+        left: 1rem;
+        text-shadow: 0rem 0rem 1.2rem rgb(0, 0, 0, 0.5);
+    }
+    #menu1{
+        cursor: pointer;
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 1.74rem 0rem 0rem 0rem;
+        font-size: 1.9rem;
+        right: 1rem;
+        text-shadow: 0rem 0rem 1.2rem rgb(0, 0, 0, 0.5);
+    }
+    #menu2{
+        cursor: pointer;
+        font-size: 2.5rem;
+        right: 1rem;
+        margin-top: 1rem;
+        text-shadow: 0rem 0rem 1.2rem rgb(0, 0, 0, 0.5);
+    
+    }
+    .nav #back :hover{
+        opacity: 0.7;
+    }
+    
+    .heading{
+        text-align: center;
+        font-size: 0.9rem;
+        text-shadow: 0.35rem 0.3rem 0.6rem rgb(0, 0, 0, 0.6);
+
+    }
+    .heading h3{
+        letter-spacing: 0.4rem;
+        line-height: 3.5rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40rem;
+        height: 3.2rem;
+        margin: 0.2rem 0.1rem;
+        padding: 0.2rem 0.1rem;
+        text-shadow: 0rem 0rem 0.2rem #eeeeee;
+    }
+    
+    .heading h4{
+        font-size: 1.2rem;
+        margin: 0.7rem 0rem;
+        padding: 0.5rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.2rem;
+        letter-spacing: 0.37rem;
+        line-height: 1.5rem;
+    
+    }
+    
+    .image{
+        width: 7rem;
+        height: 7rem;
+        margin: 1.2rem 1rem 1.2rem;
+    
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0rem 0rem 4.5rem 0.0001rem rgba(202, 196, 196, 0.65);
+    }
+    .anime{
+        animation: rotation 8s linear infinite;
+    
+    }
+    
+    @keyframes rotation {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .sound{
+        margin: 0.7rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    audio {
+        display: none; 
+        height: 0rem;
+    } 
+    
+    #pgBox{
+        /* border: 0.1rem solid black; */
+        width: 19rem;
+        height: 0.6rem;
+        border-radius: 5rem;
+        margin: 1rem;
+        background-color: rgba(226, 217, 217, 0.742);
+        box-shadow: 0rem 0rem 1rem 0.01rem rgba(212, 228, 228, 0.497),
+                inset 0rem 0rem 0.4rem 0.1rem rgb(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    #pg{
+        width: 1%;
+        height: 100%;
+        border-radius: 5rem;
+        background-color: #111822;
+        transition: width 0.1s linear;
+    }
+    
+    .musicControls{
+        margin: 0rem 0rem;
+        width: 24rem;
+        height: 9rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .musicControls i{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem;
+        padding: 2.3rem;
+        border-radius: 50%;
+        cursor: pointer;
+        text-shadow: -0.1rem 0.08rem 0.7rem rgb(0, 0, 0, 0.7);
+        box-shadow: 0rem 0rem 0.9rem 0.018rem rgba(223, 217, 217, 0.5), 
+                inset 0.09rem -0.2rem 0.6rem 0.05rem rgba(22, 3, 3, 0.5);
+    
+    }
+    
+    .musicControls #play{
+        font-size: 2.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0.2rem 0.2rem;
+        padding: 3rem;
+    }
+    
+    .musicControls i:hover{
+        opacity: 0.87;
+    }
+    
+    .musicControls #volumeSlider{
+        -webkit-appearance: none;
+        transform: rotate(-90deg);
+        position: absolute;
+        right: 0.15rem;
+        bottom: 26rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2.2rem;
+        background: #06050a;
+        overflow: hidden;
+        opacity: 0;
+        display: none;
+    }
+    #volumeSlider :active{
+        opacity: 1;
+        display: block;
+    }
+    .musicControls #volumeSlider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        background: #EEEEEE;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2.2rem;
+        box-shadow: 0rem 0rem 1rem 1rem rgb(0, 0, 0, 0.5);
+    }
+    
+    /* ======================================================== */
+    /* ======================================================== */
+    /* ======================================================== */
+    /* ======================================================== */
+    /* playlist section */
+    
+    .playlists{
+        width: 100vw;
+        height: 100%;
+        max-height: 0px;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        /* transition: 0.5s; */
+        overflow: hidden;
+        /* display: none; */
+    }
+    .container .active{
+        max-height: 100vh;
+        /* padding: 100px 0px 0px 0px; */
+        z-index: 34;
+    
+    }
+    .container .active2{
+        position: absolute;
+        max-height: 0px;
+        /* padding: 100px 0px 0px 0px; */
+        z-index: 20;
+        overflow: hidden;
+        bottom: 0;
+        display: none;
+    }
+    .playlists .yourPlaylists{
+        width: 26rem;
+        position: relative;
+        height: 43rem;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgba(6, 28, 29, 0.938);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4rem;
+        box-shadow: 4px 4px 280px 40px rgba(0, 255, 255, 0.55);
+        transition: 0.5s;
+    }
+    
+    .playHeading{
+        position: absolute;
+        margin: 0.2rem 0rem 0.2rem 0rem;
+        top: 2rem;
+        width: 22rem;
+        height: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .playHeading .playlistTitle{
+        flex-grow: 2;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 1rem;
+        padding-left: 0rem;
+        letter-spacing: 0.4rem;
+        line-height: 3.5rem;
+        overflow: hidden;
+        text-shadow: 0.35rem 0.3rem 0.6rem rgb(0, 0, 0, 0.6);
+    
+    }
+    .playHeading #Pback{
+        font-size: 3rem;
+        left: 1rem;
+        margin: 1rem 0rem 0rem 0rem;
+        text-shadow: 0rem 0rem 1.2rem rgb(0, 0, 0, 0.5);
+        cursor: pointer;
+
+    }
+    
+    
+    .QueueOuter{
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+        height: 31rem;
+        transition: 0.5;
+        padding-top: 1rem;
+        overflow-y: scroll;
+    }
+    .QueueOuter::-webkit-scrollbar{
+        background-color: #222831;
+        border-radius: 1rem;
+        width: 1.3rem;
+    }
+    .QueueOuter::-webkit-scrollbar-thumb{
+        background-color: rgba(221, 203, 208, 0.926);
+        border-radius: 1rem;
+        width: 1.3rem;
+    }
+    .QueueOuter.QueueOuter::-webkit-scrollbar-thumb:hover{
+        background-color: rgba(150, 64, 85, 0.674);
+    }
+    
+    
+    .queue{
+        /* position: relative; */
+        top: 0rem;
+        left: -6rem;
+        display: flex;
+        flex-direction: row;
+        margin: 0.8rem 0rem;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .queueImage{
+        display: flex;
+        flex-direction: row;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.2rem 0.1rem 0.1rem;
+    }
+    .Pid{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0rem 0.7rem 0rem 0.6rem;
+        box-shadow: 0rem 0rem 0.8rem 0.1rem rgba(223, 213, 213, 0.6);
+    }
+    #plPlay1{
+        font-size: 1.35rem;
+        position: relative;
+        left: -2.6rem;
+        top: 0.84rem;
+        color: black;
+        cursor: pointer;
+    }
+    #plPlay2{
+        font-size: 3.1rem;
+        position: relative;
+        left: -4.4rem;
+        top: 2.2rem;
+        color: black;
+        cursor: pointer;
+    }
+    #plPlay3{
+        font-size: 3.1rem;
+        position: relative;
+        left: -4.4rem;
+        top: 2.2rem;
+        color: black;
+        cursor: pointer;
+    }
+    #plPlay4, #plPlay5, #plPlay6, #plPlay7, #plPlay8, #plPlay9{
+        font-size: 3.1rem;
+        position: relative;
+        left: -4.4rem;
+        top: 2.2rem;
+        color: black;
+        cursor: pointer;
+    }
+    .songName{
+        margin: 0rem 0rem 0rem 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        line-height: 2.5rem;
+        overflow: hidden;
+        text-shadow: 0.35rem 0.3rem 0.6rem rgb(0, 0, 0, 0.6);
+        cursor: pointer;
+        overflow-x: hidden;
+    }
+}
